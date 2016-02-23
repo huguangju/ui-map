@@ -164,7 +164,7 @@
 &lt;div ng-repeat=&quot;marker in myMarkers&quot; ui-map-marker=&quot;myMarkers[$index]&quot;
   ui-event=&quot;{&#x27;map-click&#x27;: &#x27;openMarkerInfo(marker)&#x27;}&quot;&gt;
 &lt;/div&gt;
-
+e
 &lt;div ui-map-info-window=&quot;myInfoWindow&quot;&gt;
   &lt;h1&gt;Marker&lt;/h1&gt;
   Lat: &lt;input ng-model=&quot;currentMarkerLat&quot;&gt;, Lng: &lt;input ng-model=&quot;currentMarkerLng&quot;&gt;
@@ -250,6 +250,7 @@ $scope.setMarkerPosition = function(marker, lat, lng) {
 <script src="core/prettifyDirective.js"></script>
 <script src="core/plunker.js"></script>
 <script src="https://rawgithub.com/angular-ui/ui-utils/master/modules/event/event.js"></script>
+<script src="https://cdn.rawgit.com/angular-ui/ui-event/master/dist/event.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initCall"></script>
 <script src="dist/ui-map.min.js"></script>
 
